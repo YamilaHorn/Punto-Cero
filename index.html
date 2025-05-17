@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Punto 0 - Inicio</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      body {
+        min-height: 100vh;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url("images/showImg/punto 0.png");
+        background-size: cover;
+        background-position: center;
+        font-family: "Poppins", sans-serif;
+      }
+
+      .menu {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 20px;
+        width: 80%;
+        max-width: 800px;
+      }
+
+      .menu-card {
+        background-color: rgba(255, 255, 255, 0.85);
+        border-radius: 15px;
+        text-align: center;
+        padding: 30px 20px;
+        font-size: 1.2rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        text-decoration: none;
+        color: #000;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      }
+
+      .menu-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="menu">
+        <a class="menu-card" href="futbol11.html">Fútbol 11</a>
+      <a class="menu-card" href="futbol5.html">Fútbol 5</a>
+      <a class="menu-card" href="futsal.html">Futsal</a>
+      <a class="menu-card" href="guantes.html">Guantes</a>
+    </div>
+  </body>
+</html>
