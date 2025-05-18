@@ -66,7 +66,7 @@ body {
 
 .back-button {
   padding: 12px 24px;
-  background-color: #000;
+  background-color: rgba(167, 155, 155, 0.5);
   color: #fff;
   text-decoration: none;
   border-radius: 8px;
@@ -76,7 +76,7 @@ body {
 }
 
 .back-button:hover {
-  background-color: #333;
+  background-color: rgba(255, 255, 255, 0.4);
 }
 
 .swiper-navBtn {
