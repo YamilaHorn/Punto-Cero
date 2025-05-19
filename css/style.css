@@ -64,6 +64,36 @@ body {
   margin-top: 40px;
 }
 
+.selectors {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+  padding: 0 15px 15px 15px;
+}
+.selectors label {
+  font-size: 12px;
+  color: #4d4d4d;
+  font-weight: 500;
+}
+
+.color-select {
+  padding: 3px 6px;
+  border: 1px solid #858383;
+  background-color:  rgba(207, 204, 204, 0.95);
+  font-weight: 300;
+  cursor: pointer;
+  font-size: 11px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.color-select:hover {
+  background-color: rgba(207, 204, 204, 0.95);
+  cursor: pointer;
+}
+
 .back-button {
   padding: 12px 24px;
   background-color: #000;
@@ -77,6 +107,7 @@ body {
 
 .back-button:hover {
   background-color: #333;
+
 }
 
 .swiper-navBtn {
