@@ -6,9 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fútbol 11 Nike</title>
-    <!-- Swiper CSS -->
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
-    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -17,62 +15,183 @@
         <div class="card-wrapper swiper-wrapper">
           <div class="card swiper-slide">
             <div class="image-box">
-              <img src="images/F11/Nike/nikeAir.webp" alt="" />
+              <img
+                src="images/F11/Nike/nikeAir.webp"
+                alt="Botín Adidas F50"
+                class="boot-image"
+              />
             </div>
             <div class="profile-details">
-              <img src="images/profile/logoNike.png" alt="" />
+              <img src="images/profile/logoNike.png" alt="logo nike" />
               <div class="name-job">
-                <h3 class="name">Nike Air</h3>
-                <h4 class="job">7US</h4>
+                <h3 class="name">Nike Mercurial</h3>
+                <h4 class="job size-info">6.5US - 7US</h4>
               </div>
+            </div>
+            <div class="selectors">
+              <label for="color-select">Color:</label>
+              <select class="color-select" onchange="onSelectChange(this)">
+                <option data-img="nikeAir.webp" data-size="6.5US - 7US">
+                  Amarillo
+                </option>
+                <option data-img="nikeBlue.webp" data-size="8US">Azul</option>
+                <option
+                  data-img="nikeAirPinckAndBlack.webp"
+                  data-size="4.5US - 5.5US - 6.5US"
+                >
+                  Fucsia - Negro
+                </option>
+                <option
+                  data-img="nikeAirRosa.webp"
+                  data-size="4US - 4.5US - 5.5US - 6.5US"
+                >
+                  Fucsia - Turquesa
+                </option>
+                <option data-img="nikeColors.webp" data-size="4US al 11US">
+                  Multicolor
+                </option>
+                <option
+                  data-img="redAndWhite.webp"
+                  data-size="4US - 4.5US - 5.5US - 6.5US - 7US"
+                >
+                  Rojo - Blanco
+                </option>
+                <option
+                  data-img="nikeAirRed.webp"
+                  data-size="4US - 4.5US - 5.5US - 6.5US"
+                >
+                  Rojo - Negro
+                </option>
+                <option
+                  data-img="nikePinkAndBlack.webp"
+                  data-size="4.5US - 5.5US - 6.5US"
+                >
+                  Rosa - Negro
+                </option>
+                <option data-img="nikeBlueAndPink.webp" data-size="4US al 11US">
+                  Turquesa - Rosa
+                </option>
+              </select>
             </div>
           </div>
           <div class="card swiper-slide">
             <div class="image-box">
-              <img src="images/F11/Nike/Nike.webp" alt="" />
+              <img
+                src="images/F11/Nike/nikePink.webp"
+                alt="Botín Adidas F50"
+                class="boot-image"
+              />
             </div>
             <div class="profile-details">
-              <img src="images/profile/logoNike.png" alt="" />
+              <img src="images/profile/logoNike.png" alt="logo nike" />
+              <div class="name-job">
+                <h3 class="name">Nike Mercurial Bota</h3>
+                <h4 class="job size-info">4US - 4.5US - 5.5US - 6.5US</h4>
+              </div>
+            </div>
+            <div class="selectors">
+              <label for="color-select">Color:</label>
+              <select class="color-select" onchange="onSelectChange(this)">
+                <option
+                  data-img="nikePink.webp"
+                  data-size="4US - 4.5US - 5.5US - 6.5US"
+                >
+                  Rosa - Negro
+                </option>
+              </select>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="image-box">
+              <img
+                src="images/F11/Nike/nikeTiempoBlue.webp"
+                alt="Botín Adidas F50"
+                class="boot-image"
+              />
+            </div>
+            <div class="profile-details">
+              <img src="images/profile/logoNike.png" alt="logo nike" />
               <div class="name-job">
                 <h3 class="name">Nike Tiempo</h3>
-                <h4 class="job">8US</h4>
+                <h4 class="job size-info">6.5US</h4>
               </div>
+            </div>
+            <div class="selectors">
+              <label for="color-select">Color:</label>
+              <select class="color-select" onchange="onSelectChange(this)">
+                <option data-img="nikeTiempoBlue.webp" data-size="6.5US">
+                  Azul
+                </option>
+                <option
+                  data-img="nikeWhite.webp"
+                  data-size="7US - 8US - 8.5US - 9.5US - 10US"
+                >
+                  Blanco
+                </option>
+                <option
+                  data-img="nikeWhiteAndBlack.webp"
+                  data-size="7US - 8US - 8.5US - 9.5US - 10US"
+                >
+                  Blanco - Negro
+                </option>
+                <option data-img="Nike.webp" data-size="7US - 8US">
+                  Esmeralda
+                </option>
+                <option data-img="nikeTiempoOrange.webp" data-size="8US">
+                  Naranja - Negro
+                </option>
+              </select>
             </div>
           </div>
           <div class="card swiper-slide">
             <div class="image-box">
-              <img src="images/F11/Nike/nikeAirRed.webp" alt="" />
+              <img
+                src="images/F11/Nike/nikeOrange.webp"
+                alt="Botín Adidas F50"
+                class="boot-image"
+              />
             </div>
             <div class="profile-details">
-              <img src="images/profile/logoNike.png" alt="" />
+              <img src="images/profile/logoNike.png" alt="logo nike" />
               <div class="name-job">
-                <h3 class="name">Nike Air</h3>
-                <h4 class="job">8US 9US</h4>
+                <h3 class="name">Nike Phantom Luna</h3>
+                <h4 class="job size-info">8US</h4>
               </div>
+            </div>
+            <div class="selectors">
+              <label for="color-select">Color:</label>
+              <select class="color-select" onchange="onSelectChange(this)">
+                <option data-img="nikeOrange.webp" data-size="8US">
+                  Naranja
+                </option>
+              </select>
             </div>
           </div>
           <div class="card swiper-slide">
             <div class="image-box">
-              <img src="images/F11/Nike/nikeAirOrange.webp" alt="" />
+              <img
+                src="images/F11/Nike/nikePardo.webp"
+                alt="Botín Adidas F50"
+                class="boot-image"
+              />
             </div>
             <div class="profile-details">
-              <img src="images/profile/logoNike.png" alt="" />
+              <img src="images/profile/logoNike.png" alt="logo nike" />
               <div class="name-job">
-                <h3 class="name">Nike Air</h3>
-                <h4 class="job">8US 9US</h4>
+                <h3 class="name">Nike Phantom GX</h3>
+                <h4 class="job size-info">7US</h4>
               </div>
             </div>
-          </div>
-          <div class="card swiper-slide">
-            <div class="image-box">
-              <img src="images/F11/Nike/nikeAirRosa.webp" alt="" />
-            </div>
-            <div class="profile-details">
-              <img src="images/profile/logoNike.png" alt="" />
-              <div class="name-job">
-                <h3 class="name">Nike Air</h3>
-                <h4 class="job">8US 9US</h4>
-              </div>
+            <div class="selectors">
+              <label for="color-select">Color:</label>
+              <select class="color-select" onchange="onSelectChange(this)">
+                <option data-img="nikePardo.webp" data-size="7US">
+                  Blanco - Negro
+                </option>
+                <option data-img="nikeAirOrange.webp" data-size="10US">
+                  Naranja - Negro
+                </option>
+              </select>
             </div>
           </div>
         </div>
@@ -87,5 +206,19 @@
     </div>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
+    <script>
+      function onSelectChange(select) {
+        const selectedOption = select.options[select.selectedIndex];
+        const imgName = selectedOption.getAttribute("data-img");
+        const sizes = selectedOption.getAttribute("data-size");
+
+        const card = select.closest(".card");
+        const img = card.querySelector(".boot-image");
+        const sizeText = card.querySelector(".size-info");
+
+        img.src = `images/F11/Nike/${imgName}`;
+        sizeText.textContent = sizes;
+      }
+    </script>
   </body>
 </html>
