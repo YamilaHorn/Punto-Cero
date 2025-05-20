@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - codingnepalweb.com -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Futsal Adidas</title>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container swiper">
+      <div class="slide-container">
+        <div class="card-wrapper swiper-wrapper">
+          <div class="card swiper-slide">
+            <div class="image-box">
+              <img
+                src="images/Futsal/Adidas/ABlancoNaranja.webp"
+                alt="Botín Adidas F50"
+                class="boot-image"
+              />
+            </div>
+            <div class="profile-details">
+              <img src="images/profile/adidas.png" alt="logo adidas" />
+              <div class="name-job">
+                <h3 class="name">Adidas</h3>
+                <h4 class="job size-info">6.5US - 7US - 8US - 8.5US</h4>
+              </div>
+            </div>
+            <div class="selectors">
+              <label for="color-select">Color:</label>
+              <select class="color-select" onchange="onSelectChange(this)">
+                <option
+                  data-img="ABlancoNaranja.webp"
+                  data-size="6.5US - 7US - 8US - 8.5US"
+                >
+                  Blanco - Naranja
+                </option>
+                <option
+                  data-img="ANegro.webp"
+                  data-size="7US - 8US - 8.5US - 9.5US - 10US - 11US"
+                >
+                  Negro
+                </option>
+              </select>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="image-box">
+              <img
+                src="images/Futsal/Adidas/CNegroBlanco.webp"
+                alt="Botín Adidas F50"
+                class="boot-image"
+              />
+            </div>
+            <div class="profile-details">
+              <img src="images/profile/adidas.png" alt="logo adidas" />
+              <div class="name-job">
+                <h3 class="name">Copa</h3>
+                <h4 class="job size-info">7US - 10US - 11US</h4>
+              </div>
+            </div>
+            <div class="selectors">
+              <label for="color-select">Color:</label>
+              <select class="color-select" onchange="onSelectChange(this)">
+                <option
+                  data-img="CNegroBlanco.webp"
+                  data-size="7US - 10US - 11US"
+                >
+                  Negro - Blanco
+                </option>
+                <option
+                  data-img="CNegroRojo.webp"
+                  data-size="7US - 8.5US - 9.5US - 10US - 11US"
+                >
+                  Negro - Rojo
+                </option>
+                <option
+                  data-img="CNegroVerde.webp"
+                  data-size="8US - 8.5US - 9.5US - 10US - 11US"
+                >
+                  Negro - Verde
+                </option>
+              </select>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="image-box">
+              <img
+                src="images/Futsal/Adidas/PAmarillo.webp"
+                alt="Botín Adidas F50"
+                class="boot-image"
+              />
+            </div>
+            <div class="profile-details">
+              <img src="images/profile/adidas.png" alt="logo adidas" />
+              <div class="name-job">
+                <h3 class="name">Predator</h3>
+                <h4 class="job size-info">6.5US - 7US - 8US - 8.5US</h4>
+              </div>
+            </div>
+            <div class="selectors">
+              <label for="color-select">Color:</label>
+              <select class="color-select" onchange="onSelectChange(this)">
+                <option
+                  data-img="PAmarillo.webp"
+                  data-size="6.5US - 7US - 8US - 8.5US"
+                >
+                  Amarillo
+                </option>
+                <option data-img="PAzul.webp" data-size="7US">Azul</option>
+                <option
+                  data-img="PBlanco.webp"
+                  data-size="7US - 8US - 8.5US - 9.5US - 10US - 11US"
+                >
+                  Blanco
+                </option>
+                <option data-img="PVerde.webp" data-size="6.5US - 7US - 8US">
+                  Verde
+                </option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-next swiper-navBtn"></div>
+      <div class="swiper-button-prev swiper-navBtn"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <div class="back-wrapper">
+      <a href="futbol5-marcas.html" class="back-button">Volver al menú</a>
+    </div>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+      function onSelectChange(select) {
+        const selectedOption = select.options[select.selectedIndex];
+        const imgName = selectedOption.getAttribute("data-img");
+        const sizes = selectedOption.getAttribute("data-size");
+
+        const card = select.closest(".card");
+        const img = card.querySelector(".boot-image");
+        const sizeText = card.querySelector(".size-info");
+
+        img.src = `images/Futsal/Adidas/${imgName}`;
+        sizeText.textContent = sizes;
+      }
+    </script>
+  </body>
+</html>
