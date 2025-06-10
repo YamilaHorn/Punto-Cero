@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - codingnepalweb.com -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zapatillas New Balance</title>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container swiper">
+      <div class="slide-container">
+        <div class="card-wrapper swiper-wrapper">
+          <div class="card swiper-slide">
+            <div class="image-box">
+              <img
+                src="images/Zapatillas/NB/NBBendecidaazul.webp"
+                alt="Botín Adidas F50"
+                class="boot-image"
+              />
+            </div>
+            <div class="profile-details">
+              <img src="images/profile/newbalance.png" alt="logo adidas" />
+              <div class="name-job">
+                <h3 class="name">NB 9060</h3>
+                <h4 class="job size-info">34 ARG al 38 ARG</h4>
+              </div>
+            </div>
+            <div class="selectors">
+              <label for="color-select">Color:</label>
+              <select class="color-select" onchange="onSelectChange(this)">
+                <option
+                  data-img="NBBendecidaazul.webp"
+                  data-size="34 ARG al 38 ARG"
+                >
+                  Azul
+                </option>
+              </select>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="image-box">
+              <img
+                src="images/Zapatillas/NB/NBBendecidagris.webp"
+                alt="Botín Adidas F50"
+                class="boot-image"
+              />
+            </div>
+            <div class="profile-details">
+              <img src="images/profile/newbalance.png" alt="logo adidas" />
+              <div class="name-job">
+                <h3 class="name">NB 9060</h3>
+                <h4 class="job size-info">34 ARG al 36 ARG</h4>
+              </div>
+            </div>
+            <div class="selectors">
+              <label for="color-select">Color:</label>
+              <select class="color-select" onchange="onSelectChange(this)">
+                <option data-img="adidascampus.webp" data-size="34 ARG al 36 ARG">
+                  Gris
+                </option>
+              </select>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="image-box">
+              <img
+                src="images/Zapatillas/NB/NBBendecidamarron.webp"
+                alt="Botín Adidas F50"
+                class="boot-image"
+              />
+            </div>
+            <div class="profile-details">
+              <img src="images/profile/newbalance.png" alt="logo adidas" />
+              <div class="name-job">
+                <h3 class="name">NB 9060</h3>
+                <h4 class="job size-info">34 ARG al 39 ARG</h4>
+              </div>
+            </div>
+            <div class="selectors">
+              <label for="color-select">Color:</label>
+              <select class="color-select" onchange="onSelectChange(this)">
+                <option
+                  data-img="NBBendecidamarron.webp"
+                  data-size="34 ARG al 39 ARG"
+                >
+                  Marrón
+                </option>
+              </select>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="image-box">
+              <img
+                src="images/Zapatillas/NB/NBBendecidarosa.webp"
+                alt="Botín Adidas F50"
+                class="boot-image"
+              />
+            </div>
+            <div class="profile-details">
+              <img src="images/profile/newbalance.png" alt="logo adidas" />
+              <div class="name-job">
+                <h3 class="name">NB 9060</h3>
+                <h4 class="job size-info">34 ARG al 37 ARG</h4>
+              </div>
+            </div>
+            <div class="selectors">
+              <label for="color-select">Color:</label>
+              <select class="color-select" onchange="onSelectChange(this)">
+                <option
+                  data-img="NBBendecidarosa.webp"
+                  data-size="34 ARG al 37 ARG"
+                >
+                  Rosa
+                </option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-next swiper-navBtn"></div>
+      <div class="swiper-button-prev swiper-navBtn"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <div class="back-wrapper">
+      <a href="zapatillas-marcas.html" class="back-button">Volver al menú</a>
+    </div>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+      function onSelectChange(select) {
+        const selectedOption = select.options[select.selectedIndex];
+        const imgName = selectedOption.getAttribute("data-img");
+        const sizes = selectedOption.getAttribute("data-size");
+
+        const card = select.closest(".card");
+        const img = card.querySelector(".boot-image");
+        const sizeText = card.querySelector(".size-info");
+
+        img.src = `images/Zapatillas/Adidas/${imgName}`;
+        sizeText.textContent = sizes;
+      }
+    </script>
+  </body>
+</html>
