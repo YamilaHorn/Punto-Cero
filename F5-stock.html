@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - codingnepalweb.com -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fútbol 5</title>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container swiper">
+      <div class="slide-container">
+        <div class="card-wrapper swiper-wrapper">
+          <div class="card swiper-slide">
+            <div class="image-box">
+              <img
+                src="images/F5/Adidas/adidascrazyfast.webp"
+                alt="Botín Adidas F50"
+                class="boot-image"
+              />
+            </div>
+            <div class="profile-details">
+              <img src="images/profile/adidas.png" alt="logo adidas" />
+              <div class="name-job">
+                <h3 class="name">Adidas Crazyfast</h3>
+                <h4 class="job size-info">35 ARG</h4>
+              </div>
+            </div>
+            <div class="selectors">
+              <label for="color-select">Color:</label>
+              <select class="color-select" onchange="onSelectChange(this)">
+                <option data-img="adidascrazyfast.webp" data-size="35 ARG">
+                  Amarillo
+                </option>
+              </select>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="image-box">
+              <img src="images/F5/Adidas/copapure3.0.webp" alt="Botín Adidas F50" class="boot-image" />
+            </div>
+            <div class="profile-details">
+              <img src="images/profile/adidas.png" alt="logo adidas" />
+              <div class="name-job">
+                <h3 class="name">Adidas Copa Pure 3.0</h3>
+                <h4 class="job size-info">42 ARG</h4>
+              </div>
+            </div>
+            <div class="selectors">
+              <label for="color-select">Color:</label>
+              <select class="color-select" onchange="onSelectChange(this)">
+                <option data-img="copapure3.0.webp" data-size="42 ARG">
+                  Blanco - Negro
+                </option>
+              </select>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="image-box">
+              <img
+                src="images/F5/Adidas/adidasmundialteam.webp"
+                alt="Botín Adidas F50"
+                class="boot-image"
+              />
+            </div>
+            <div class="profile-details">
+              <img src="images/profile/adidas.png" alt="logo adidas" />
+              <div class="name-job">
+                <h3 class="name">Adidas Mundial Team</h3>
+                <h4 class="job size-info">44 ARG</h4>
+              </div>
+            </div>
+            <div class="selectors">
+              <label for="color-select">Color:</label>
+              <select class="color-select" onchange="onSelectChange(this)">
+                <option data-img="adidasmundialteam.webp" data-size="44 ARG">
+                  Blanco
+                </option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="swiper-button-next swiper-navBtn"></div>
+      <div class="swiper-button-prev swiper-navBtn"></div>
+      <div class="swiper-pagination"></div> -->
+    </div>
+
+    <div class="back-wrapper">
+      <a href="stock.html" class="back-button">Volver al menú</a>
+    </div>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+      function onSelectChange(select) {
+        const selectedOption = select.options[select.selectedIndex];
+        const imgName = selectedOption.getAttribute("data-img");
+        const sizes = selectedOption.getAttribute("data-size");
+
+        const card = select.closest(".card");
+        const img = card.querySelector(".boot-image");
+        const sizeText = card.querySelector(".size-info");
+
+        img.src = `images/F5/Nike/${imgName}`;
+        sizeText.textContent = sizes;
+      }
+    </script>
+  </body>
+</html>
