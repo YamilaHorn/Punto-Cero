@@ -109,7 +109,12 @@ body {
   background-color: #333;
 
 }
-
+.price {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #c54946; /* o el color que combine con tu tema */
+  margin-top: 4px;
+}
 .swiper-navBtn {
   color: #000;
   height: 40px;
