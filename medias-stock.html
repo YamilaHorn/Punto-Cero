@@ -16,7 +16,7 @@
           <div class="card swiper-slide">
             <div class="image-box">
               <img
-                src="images/"
+                src="images/medias/mediascalcioadulto.webp"
                 alt="Botín Adidas F50"
                 class="boot-image"
               />
@@ -31,10 +31,10 @@
             <div class="selectors">
               <label for="color-select">Color:</label>
               <select class="color-select" onchange="onSelectChange(this)">
-                <option data-img=".webp" data-size="Adultos">
+                <option data-img="mediascalcioadulto.webp" data-size="Adultos">
                   Negro
                 </option>
-                <option data-img=".webp" data-size="Adultos">
+                <option data-img="mediascalcioadultoblancas.webp" data-size="Adultos">
                   Blanco
                 </option>
               </select>
@@ -42,7 +42,7 @@
           </div>
           <div class="card swiper-slide">
             <div class="image-box">
-              <img src="images/" alt="Botín Adidas F50" class="boot-image" />
+              <img src="images/medias/mediascalcioniñosblanca.webp" alt="Botín Adidas F50" class="boot-image" />
             </div>
             <div class="profile-details">
               <div class="name-job">
@@ -54,7 +54,7 @@
             <div class="selectors">
               <label for="color-select">Color:</label>
               <select class="color-select" onchange="onSelectChange(this)">
-                <option data-img=".webp" data-size="Niños">
+                <option data-img="mediascalcioniños.webp" data-size="Niños">
                   Blanco 
                 </option>
               </select>
@@ -63,7 +63,7 @@
           <div class="card swiper-slide">
             <div class="image-box">
               <img
-                src="images/"
+                src="images/medias/mediascalcioeconomicas.webp"
                 alt="Botín Adidas F50"
                 class="boot-image"
               />
@@ -78,15 +78,15 @@
             <div class="selectors">
               <label for="color-select">Color:</label>
               <select class="color-select" onchange="onSelectChange(this)">
-                <option data-img=".webp" data-size="Adultos">
-                  Gris
+                <option data-img="mediascalcioeconomicas.webp" data-size="Adultos">
+                  Negro
                 </option>
               </select>
             </div>
           </div>
           <div class="card swiper-slide">
             <div class="image-box">
-              <img src="images/" alt="Botín Adidas F50" class="boot-image" />
+              <img src="images/medias/canillerablanca.webp" alt="Botín Adidas F50" class="boot-image" />
             </div>
             <div class="profile-details">
               <div class="name-job">
@@ -98,8 +98,11 @@
             <div class="selectors">
               <label for="color-select">Color:</label>
               <select class="color-select" onchange="onSelectChange(this)">
-                <option data-img=".webp" data-size="Adultos">
-                  Negro 
+                <option data-img="canillerablanca.webp" data-size="Adultos">
+                  Blanco
+                </option>
+                 <option data-img="canilleraamarilla.webp" data-size="Adultos">
+                  Amarillo
                 </option>
               </select>
             </div>
@@ -126,7 +129,7 @@
         const img = card.querySelector(".boot-image");
         const sizeText = card.querySelector(".size-info");
 
-        img.src = `images/F5/Nike/${imgName}`;
+        img.src = `images/medias/${imgName}`;
         sizeText.textContent = sizes;
       }
     </script>

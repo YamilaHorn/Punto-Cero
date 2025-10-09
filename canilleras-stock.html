@@ -15,14 +15,10 @@
         <div class="card-wrapper swiper-wrapper">
           <div class="card swiper-slide">
             <div class="image-box">
-              <img
-                src="images/"
-                alt="Botín Adidas F50"
-                class="boot-image"
-              />
+              <img src="images/canilleras/guardnegras.webp" alt="Botín Adidas F50" class="boot-image" />
             </div>
             <div class="profile-details">
-            <img src="images/profile/adidas.png" alt="logo adidas" />
+              <img src="images/profile/adidas.png" alt="logo adidas" />
               <div class="name-job">
                 <h3 class="name">Adidas Guard</h3>
                 <h4 class="job size-info">Adultos</h4>
@@ -32,21 +28,17 @@
             <div class="selectors">
               <label for="color-select">Color:</label>
               <select class="color-select" onchange="onSelectChange(this)">
-                <option data-img=".webp" data-size="Adultos">
-                  Negro
-                </option>
-                <option data-img=".webp" data-size="Adultos">
-                  Blanco
-                </option>
+                <option data-img="guardnegras.webp" data-size="Adultos">Negro</option>
+                <option data-img="guardblancas.webp" data-size="Adultos">Blanco</option>
               </select>
             </div>
           </div>
           <div class="card swiper-slide">
             <div class="image-box">
-              <img src="images/" alt="Botín Adidas F50" class="boot-image" />
+              <img src="images/canilleras/xnegrasydorado.webp" alt="Botín Adidas F50" class="boot-image" />
             </div>
             <div class="profile-details">
-                <img src="images/profile/adidas.png" alt="logo adidas" />
+              <img src="images/profile/adidas.png" alt="logo adidas" />
               <div class="name-job">
                 <h3 class="name">Adidas X Shinguard</h3>
                 <h4 class="job size-info">Adultos</h4>
@@ -56,7 +48,7 @@
             <div class="selectors">
               <label for="color-select">Color:</label>
               <select class="color-select" onchange="onSelectChange(this)">
-                <option data-img=".webp" data-size="Adultos">
+                <option data-img="xnegrasydorado.webp" data-size="Adultos">
                   Negro - Dorado
                 </option>
               </select>
@@ -65,13 +57,13 @@
           <div class="card swiper-slide">
             <div class="image-box">
               <img
-                src="images/"
+                src="images/canilleras/NMamarillo.webp"
                 alt="Botín Adidas F50"
                 class="boot-image"
               />
             </div>
             <div class="profile-details">
-            <img src="images/profile/logoNike.png" alt="logo adidas" />
+              <img src="images/profile/logoNike.png" alt="logo adidas" />
               <div class="name-job">
                 <h3 class="name">Nike Mercurial</h3>
                 <h4 class="job size-info">Adultos</h4>
@@ -81,16 +73,16 @@
             <div class="selectors">
               <label for="color-select">Color:</label>
               <select class="color-select" onchange="onSelectChange(this)">
-                <option data-img=".webp" data-size="Adultos">
+                <option data-img="NMamarillo.webp" data-size="Adultos">
                   Amarillo
                 </option>
-                <option data-img=".webp" data-size="Adultos">
+                <option data-img="NMblancasamarillo.webp" data-size="Adultos">
                   Blanco - Amarillo
                 </option>
-                <option data-img=".webp" data-size="Adultos">
-                  Celeste - Rojo
+                <option data-img="NMazulrojo.webp" data-size="Adultos">
+                  Azul - Rojo
                 </option>
-                <option data-img=".webp" data-size="Adultos">
+                <option data-img="NMvioletarojo.webp" data-size="Adultos">
                   Violeta - Rojo
                 </option>
               </select>
@@ -118,7 +110,7 @@
         const img = card.querySelector(".boot-image");
         const sizeText = card.querySelector(".size-info");
 
-        img.src = `images/F5/Nike/${imgName}`;
+        img.src = `images/canilleras/${imgName}`;
         sizeText.textContent = sizes;
       }
     </script>
